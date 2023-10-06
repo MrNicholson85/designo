@@ -1,0 +1,11 @@
+.navbar-container {
+    @apply font-jostReg uppercase text-sm tracking-[2px] leading-[14px] flex justify-between
+}
+
+.navbar-wrapper {
+    @apply flex justify-between gap-[42px];
+}
+
+.navbar-wrapper li a {
+    @apply border-b-0 border-solid hover:border-b-[1px] hover:border-[#333136];
+}

@@ -1,0 +1,11 @@
+.testimonial {
+    @apply bg-[#50d71e] mb-[40px];
+}
+
+.block-content {
+    @apply p-8;
+}
+
+.testimonial .block-title {
+    @apply text-[#ffffff] m-0 pb-4;
+}

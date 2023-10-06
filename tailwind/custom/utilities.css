@@ -1,0 +1,70 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `utilities` layer
+ *
+ * Add your own utility classes to this theme. Complex utility classes should
+ * be added using Tailwind’s plugin system:
+ *
+ * https://tailwindcss.com/docs/plugins#adding-utilities
+ */
+.dps-h1,
+h1 {
+    @apply
+        font-jostMed
+        text-[48px]
+        leading-[48px]
+}
+
+.dps-h2,
+h2 {
+    @apply
+        font-jostMed
+        text-[40px]
+        leading-[48px]
+        tracking-[2px]
+}
+
+.dps-h3,
+h3 {
+    @apply
+        font-jostMed
+        text-[20px]
+        leading-[26px]
+        tracking-[5px]
+}
+
+.dps-body,
+body {
+    @apply
+        font-jostReg
+        text-[16px]
+        leading-[26px]
+}
+
+.dps-light-btn {
+    @apply
+        text-center
+        font-jostMed
+        !text-darkGrey
+        hover:!text-[#ffffff]
+        bg-[#ffffff]
+        hover:bg-lightPeach
+        rounded-lg
+        py-4
+        px-6
+        uppercase
+        no-underline
+}
+
+.dps-dark-btn {
+    @apply
+        text-center
+        font-jostMed
+        !text-[#fff]
+        bg-peach
+        hover:bg-lightPeach
+        rounded-lg
+        py-4
+        px-6
+        uppercase
+        no-underline
+}

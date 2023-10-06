@@ -1,0 +1,29 @@
+.hero {
+    @apply
+    dps-wrapper
+    mx-auto
+    bg-peach
+    rounded-[15px]
+    flex
+    justify-between
+    pt-[145px]
+    px-[95px]
+    mb-[160px]
+}
+
+.hero_content {
+    @apply w-[540px] text-eggshell
+}
+
+.hero-title {
+    @apply
+    text-eggshell
+    text-[48px]
+    font-jostMed
+    leading-[48px]
+}
+
+.hero-copy {
+    @apply
+    mb-[45px]
+}
