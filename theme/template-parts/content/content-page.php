@@ -10,8 +10,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div <?php wp_tailwind_content_class('entry-content'); ?>>
+<article id="post-<?php the_ID(); ?>" class="dps-container">
+	<div class="dps-wrapper">
 		<?php
 		the_content();
 

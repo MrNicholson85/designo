@@ -12,7 +12,7 @@ $header_logo = get_field('brand_logo', 'option');
 ?>
 
 <header id="masthead" class="dps-wrapper">
-	<div class="flex justify-between items-center my-[64px]">
+	<div class="dps-nav-wrapper">
 		<div class="brand-logo">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 				<img src="<?php echo esc_url($header_logo['url']); ?>" />
@@ -22,13 +22,13 @@ $header_logo = get_field('brand_logo', 'option');
 		<nav id="site-navigation" aria-label="<?php esc_attr_e('Main Navigation', 'wp-tailwind'); ?>">
 			<?php
 			$menu_name = "menu-1";
-
 			if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
 				$menu = wp_get_nav_menu_object($locations[$menu_name]);
 
 				$menu_items = wp_get_nav_menu_items($menu->term_id);
 				echo '<div id="primary-menu" class="navbar-container">';
-				echo '<ul id="menu-dps-primary-menu" class="navbar-wrapper">';
+				echo '<img class="md:hidden dps-menu-toggle" src="' . DPS_DIR_URI . '/assets/img/menu.svg" />';
+				echo '<ul id="menu-dps-primary-menu" class="sm:hidden md:flex navbar-wrapper">';
 
 				foreach ($menu_items as $menu_item) {
 					$title = $menu_item->title;
@@ -42,5 +42,17 @@ $header_logo = get_field('brand_logo', 'option');
 			}
 			?>
 		</nav><!-- #site-navigation -->
+	</div>
+	<div class="dps-mobile-menu">
+		<ul>
+			<?php
+			$menu_items = wp_get_nav_menu_items($menu->term_id);
+			foreach ($menu_items as $menu_item) {
+				$title = $menu_item->title;
+				$url = $menu_item->url;
+				echo '<li><a href="' . $url . '" class="text-white">' . $title . '</a></li>';
+			}
+			?>
+		</ul>
 	</div>
 </header><!-- #masthead -->

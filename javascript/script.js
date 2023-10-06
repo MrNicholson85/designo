@@ -31,7 +31,17 @@ function initializeSlider() {
 	return swiper;
 }
 
+function menuToggle() {
+	const menuToggle = document.querySelector('.dps-menu-toggle');
+	const mobileMenu = document.querySelector('.dps-mobile-menu');
+
+	menuToggle.onclick = function () {
+		mobileMenu.classList.toggle('active');
+	};
+}
+
 // Wrap your code in the jQuery document ready function
 $(document).ready(function () {
 	initializeSlider();
+	menuToggle();
 });

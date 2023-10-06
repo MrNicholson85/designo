@@ -15,10 +15,12 @@ body {
 	@apply bg-background text-foreground font-jostReg;
 }
 
-.dps-container {
-	@apply w-[1440px];
-}
+
 
 .dps-wrapper {
-	@apply w-[1110px] mx-auto;
+	@apply 
+	lg:w-[1110px]
+	md:w-[689px]
+	mid:w-[1024px]
+	mx-auto
 }

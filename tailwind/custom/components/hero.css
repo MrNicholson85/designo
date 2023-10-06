@@ -1,29 +1,60 @@
 .hero {
     @apply
-    dps-wrapper
-    mx-auto
+    sm:mx-auto
+    lg:mx-auto
     bg-peach
-    rounded-[15px]
-    flex
-    justify-between
-    pt-[145px]
-    px-[95px]
+    md:rounded-[15px]
+    grid
+    lg:flex
+    lg:justify-between
+    pt-[60px]
+    lg:pt-[145px]
+    px-[24px]
+    md:px-[40px]
+    lg:px-[95px]
     mb-[160px]
+    overflow-hidden
+    mid:mx-[40px]
 }
 
 .hero_content {
-    @apply w-[540px] text-eggshell
+    @apply 
+    w-[327px]
+    md:w-[573px] 
+    lg:w-[540px] 
+    md:mx-auto
+    text-center
+    lg:text-left
+    text-eggshell
 }
 
 .hero-title {
     @apply
     text-eggshell
-    text-[48px]
     font-jostMed
-    leading-[48px]
+    mb-8
 }
 
 .hero-copy {
     @apply
+    w-[327px]
     mb-[45px]
+    md:w-[445px]
+    lg:w-full
+    mx-auto
+    lg:mx-0
+}
+
+.hero_image {
+    @apply
+    w-[248px]
+    mx-auto
+    translate-y-[103px]
+    lg:translate-y-0
+}
+.hero_image img{
+    @apply
+    m-0
+    p-0
+    w-full
 }

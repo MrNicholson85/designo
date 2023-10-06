@@ -10,8 +10,10 @@
 h1 {
     @apply
         font-jostMed
-        text-[48px]
-        leading-[48px]
+        text-[36px]
+        md:text-[48px]
+        leading-[36px]
+        md:leading-[48px]
 }
 
 .dps-h2,
@@ -38,6 +40,8 @@ body {
         font-jostReg
         text-[16px]
         leading-[26px]
+        md:text-[15px]
+        md:leading-[25px]
 }
 
 .dps-light-btn {

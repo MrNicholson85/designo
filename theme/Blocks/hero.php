@@ -36,10 +36,10 @@ $img_src = wp_get_attachment_image_src($image, 'large');
         );
         ?>
     </div>
-    <div class="">
+    <div class="hero_image">
         <?php
         printf(
-            '<img class="m-0 p-0" src="%1$s" />',
+            '<img src="%1$s" />',
             $img_src[0]
         );
         ?>

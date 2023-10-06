@@ -1,11 +1,75 @@
 .navbar-container {
-    @apply font-jostReg uppercase text-sm tracking-[2px] leading-[14px] flex justify-between
+    @apply
+    relative
+    font-jostReg 
+    uppercase 
+    flex justify-between
+}
+
+.dps-nav-wrapper {
+    @apply 
+    flex 
+    justify-between
+    items-center
+    md:my-[64px]
+    my-[34px]
+    lg:mx-0
+    md:mx-0
+    mid:mx-[40px]
+    mx-[24px]
 }
 
 .navbar-wrapper {
-    @apply flex justify-between gap-[42px];
+    @apply 
+    flex 
+    justify-between 
+    gap-[42px];
 }
 
 .navbar-wrapper li a {
-    @apply border-b-0 border-solid hover:border-b-[1px] hover:border-[#333136];
+    @apply 
+    border-b-0 
+    border-solid 
+    hover:border-b-[1px] 
+    hover:border-[#333136]
+    text-sm 
+    tracking-[2px] 
+    leading-[14px] 
+}
+
+.dps-mobile-menu {
+    background: #1d1c1ead;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+
+.dps-mobile-menu ul {
+    @apply
+    grid
+    gap-8
+    px-[24px]
+    py-[48px]
+    h-[235px]
+    font-jostReg
+    uppercase
+    tracking-[2px]
+    bg-[#1D1C1E]
+}
+
+.dps-mobile-menu:before {
+    content: '';
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.606);
+}
+
+.dps-mobile-menu ul li a {
+    @apply
+    text-[24px]
+    text-[#fff]
+}
+
+.dps-mobile-menu.active {
+    display: block;
 }
