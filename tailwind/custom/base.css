@@ -17,7 +17,8 @@ body {
 
 
 
-.dps-wrapper {
+.dps-wrapper,
+.wp-block-acf-designo-hero-block {
 	@apply 
 	lg:w-[1110px]
 	md:w-[689px]

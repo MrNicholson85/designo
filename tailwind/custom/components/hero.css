@@ -21,8 +21,8 @@
     @apply 
     w-[327px]
     md:w-[573px] 
-    lg:w-[540px] 
-    md:mx-auto
+    lg:w-[540px]
+    mx-auto
     text-center
     lg:text-left
     text-eggshell
