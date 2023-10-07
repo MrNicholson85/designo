@@ -15,6 +15,22 @@
     mb-[160px]
     overflow-hidden
     mid:mx-[40px]
+    relative
+}
+
+.hero::after {
+    @apply
+    content-['']
+    bg-[url('../theme/assets/img/Oval.png')]
+    w-full
+    h-full
+    absolute
+    bg-no-repeat
+    top-0
+    right-0
+    bg-[center_right_-215px]
+    md:bg-[center_right_-100px]
+    lg:bg-right-top
 }
 
 .hero_content {
@@ -26,6 +42,7 @@
     text-center
     lg:text-left
     text-eggshell
+    z-10
 }
 
 .hero-title {
