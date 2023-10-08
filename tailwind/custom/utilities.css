@@ -20,8 +20,10 @@ h1 {
 h2 {
     @apply
         font-jostMed
-        text-[40px]
-        leading-[48px]
+        text-[28px]
+        md:text-[40px]
+        leading-[36px]
+        md:leading-[48px]
         tracking-[2px]
 }
 
