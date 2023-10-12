@@ -2,6 +2,7 @@
     @apply
     sm:mx-auto
     lg:mx-auto
+    mid:mx-[40px]
     bg-peach
     md:rounded-[15px]
     grid
@@ -15,7 +16,6 @@
     mb-[120px]
     lg:mb-[160px]
     overflow-hidden
-    mid:mx-[40px]
     relative
     z-10
 }

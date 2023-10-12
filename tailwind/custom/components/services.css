@@ -1,8 +1,10 @@
 .services {
     @apply
-    mx-0
+    mx-[24px]
     mid:mx-[40px]
     lg:mx-0
+    mb-[120px]
+    lg:mb-[160px]
 }
 .services::before {
     @apply
