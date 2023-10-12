@@ -1,0 +1,67 @@
+.info-cards {
+    @apply
+    relative
+    dps-wrapper
+    mb-[160px]
+}
+
+.info-cards::before {
+    @apply
+    content-['']
+    bg-[url('../theme/assets/img/RectangleFlipped.png')]
+    h-[594px]
+    w-[1006px]
+    absolute
+    hidden
+    z-0
+    lg:flex
+    transform
+    translate-x-[267px]
+    translate-y-[239px];
+}
+
+.info-cards .cards {
+    @apply
+    grid 
+    lg:flex
+    gap-[80px]
+    md:gap-[32px]
+    lg:gap-[30px]
+    relative
+    z-10
+}
+
+.info-cards .card-item {
+    @apply
+    grid
+    md:flex
+    gap-[48px]
+    items-center
+    lg:grid
+    justify-center
+    content-center
+    text-center
+    md:text-left
+    lg:text-center
+    mx-[24px]
+    md:mx-0
+    mid:mx-[40px]
+}
+
+.card-item__image {
+    @apply
+    mx-auto 
+    md:mb-[48px] 
+    lg:mb-0
+}
+
+.card-item__copy {
+    @apply
+    md:mb-[32px]
+}
+
+.card-item__cta  {
+    @apply
+    md:w-[152px]
+    mx-auto
+}
