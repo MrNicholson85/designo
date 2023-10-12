@@ -1,0 +1,170 @@
+.footer {
+    @apply
+    relative
+    content-['']
+    before:bg-darkGrey
+    before:h-[830px]
+    before:mid:h-[430px]
+    before:w-full
+    before:absolute
+    before:-z-[1]
+    before:bottom-0
+}
+
+.last-call {
+    @apply
+    mid:flex
+    lg:w-[1110px]
+	md:w-[689px]
+	mid:w-[944px]
+    w-[377px]
+    sm:mx-auto
+    lg:mx-auto
+    mid:mx-[40px]
+    mid:bg-contain
+    gap-[50px]
+    lg:gap-0
+    grid
+    justify-center
+    mid:justify-between
+    items-center
+	mx-auto
+    bg-peach
+    bg-[url('../theme/assets/img/ovals.png')]
+    bg-right
+    bg-no-repeat
+    bg-cover
+    rounded-2xl
+    mid:px-[95px]
+    px-[24px]
+    py-[72px]
+    mb-[72px]
+    
+}
+
+.lc-title {
+    @apply
+    text-[#ffffff]
+    w-[268px]
+    mid:mx-0
+    mx-auto
+    tracking-normal
+    text-center
+    mid:text-left
+}
+
+.lc-link {
+    @apply
+    text-center
+    lg:text-left
+}
+
+.lc-copy p {
+    @apply
+    text-[#ffffff]
+    text-[16px]
+    leading-[26px]
+    tracking-normal
+    mt-[10px]
+    text-center
+    mid:text-left
+}
+
+.fc-top {
+    @apply
+    grid
+    md:flex
+    justify-center 
+    md:justify-between
+    pb-[80px]
+    content-center
+    border-b-[1px]
+    border-b-[#979797]
+    mb-[31px]
+    mx-auto
+    w-[327px]
+    sm:mx-auto
+    md:w-auto
+    mid:mx-[40px]
+    lg:mx-auto
+    md:pb-0
+}
+
+.fc-top .fc-image  {
+    @apply
+    mb-[64px]
+}
+
+.fc-top .fc-image img {
+    @apply
+    w-[202px]
+    mx-auto
+}
+
+.fc-nav ul {
+    @apply
+    grid
+    md:flex
+    text-center
+    gap-[42px]
+}
+
+.fc-nav ul li a{
+    @apply
+    uppercase
+    text-[#ffffff]
+    tracking-[2px]
+    hover:border-b-[1px] 
+    hover:border-[#ffffff]
+}
+
+.fc-bottom {
+    @apply
+    grid
+    md:flex
+    justify-center 
+    md:justify-between
+    pb-[71px]
+    text-center
+    md:text-left
+    sm:mx-auto
+    md:w-auto
+    mid:mx-[40px]
+    lg:mx-auto
+}
+
+.fc-locations,
+.fc-contact {
+    @apply
+    mb-[40px]
+    opacity-50
+}
+
+.fc-bottom h3 {
+    @apply
+    text-[#ffffff]
+    font-bold
+    text-[16px]
+    tracking-normal
+}
+
+.fc-bottom p {
+    @apply
+    text-[#ffffff]
+    font-jostMed
+    text-[16px]
+    tracking-normal
+}
+
+.fc-social {
+    @apply
+    flex
+    gap-[18px]
+}
+
+.fc-social svg{
+    @apply
+    text-[24px]
+    text-peach
+    hover:text-lightPeach
+}
