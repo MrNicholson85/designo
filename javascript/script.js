@@ -11,6 +11,7 @@
 /* global wp */
 import Swiper from 'swiper';
 import $ from 'jquery';
+import { HeroTest } from '../theme/Blocks/HeroBlock/hero';
 
 function initializeSlider() {
 	const swiper = new Swiper('.swiper', {
@@ -44,4 +45,5 @@ function menuToggle() {
 $(document).ready(function () {
 	initializeSlider();
 	menuToggle();
+	HeroTest();
 });
