@@ -254,29 +254,17 @@ if (function_exists('acf_register_block_type')) {
 
 function register_acf_block_types()
 {
-	/**
-	 * Testimonail block
-	 */
-	acf_register_block_type(array(
-		'name' => 'Testimonial Block',
-		'title' => __('Testimonial'),
-		'desctiption' => __('Testimonail Block Template'),
-		'render_template' => '/Blocks/testimonial/testimonial.php',
-		'icon' => 'editor-past-text',
-		'keywords' => array('text', 'content')
-	));
+	// Define the directory path where your block files are located
+	$block_directory = __DIR__ . '/blocks';
 
-	/**
-	 * Cards block
-	 */
-	acf_register_block_type(array(
-		'name' => 'Cards Block',
-		'title' => __('Cards'),
-		'desctiption' => __('Cards Block Template'),
-		'render_template' => '/Blocks/cards.php',
-		'icon' => 'editor-past-text',
-		'keywords' => array('text', 'content')
-	));
+	// Get a list of all PHP files in the directory
+	$block_files = glob("$block_directory/**/");
+
+	foreach ($block_files as $block_file) {
+
+		//var_dump($block_files);
+		register_block_type($block_file);
+	}
 
 	/**
 	 * slider block
@@ -291,18 +279,6 @@ function register_acf_block_types()
 	));
 
 	/**
-	 * Hero block
-	 */
-	acf_register_block_type(array(
-		'name' => 'Designo Hero Block',
-		'title' => __('Hero'),
-		'desctiption' => __('Header Block Template'),
-		'render_template' => '/Blocks/hero.php',
-		'icon' => 'editor-past-text',
-		'keywords' => array('image', 'content')
-	));
-
-	/**
 	 * Services block
 	 */
 	acf_register_block_type(array(
@@ -310,6 +286,18 @@ function register_acf_block_types()
 		'title' => __('Services'),
 		'desctiption' => __('Services Block'),
 		'render_template' => '/Blocks/services.php',
+		'icon' => 'https://fontawesome.com/icons/layer-group?f=classic&s=solid',
+		'keywords' => array('image', 'content')
+	));
+
+	/**
+	 * Services block
+	 */
+	acf_register_block_type(array(
+		'name' => 'Designo Info Card Block',
+		'title' => __('Info Cards'),
+		'desctiption' => __('info Cards Block'),
+		'render_template' => '/Blocks/info-cards.php',
 		'icon' => 'https://fontawesome.com/icons/layer-group?f=classic&s=solid',
 		'keywords' => array('image', 'content')
 	));
