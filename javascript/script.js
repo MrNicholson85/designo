@@ -9,28 +9,9 @@
  * https://esbuild.github.io/
  */
 /* global wp */
-import Swiper from 'swiper';
 import $ from 'jquery';
 import { HeroTest } from '../theme/Blocks/HeroBlock/hero';
-
-function initializeSlider() {
-	const swiper = new Swiper('.swiper', {
-		direction: 'horizontal',
-		loop: true,
-		pagination: {
-			el: '.swiper-pagination',
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		scrollbar: {
-			el: '.swiper-scrollbar',
-		},
-	});
-
-	return swiper;
-}
+import { CarouselTest } from '../theme/Blocks/CarouselBlock/carousel';
 
 function menuToggle() {
 	const menuToggle = document.querySelector('.dps-menu-toggle');
@@ -43,7 +24,7 @@ function menuToggle() {
 
 // Wrap your code in the jQuery document ready function
 $(document).ready(function () {
-	initializeSlider();
 	menuToggle();
 	HeroTest();
+	CarouselTest();
 });
