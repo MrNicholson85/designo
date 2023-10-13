@@ -265,42 +265,6 @@ function register_acf_block_types()
 		//var_dump($block_files);
 		register_block_type($block_file);
 	}
-
-	/**
-	 * slider block
-	 */
-	acf_register_block_type(array(
-		'name' => 'Slider Block',
-		'title' => __('Slider'),
-		'desctiption' => __('Slider Block Template'),
-		'render_template' => '/Blocks/slider.php',
-		'icon' => 'editor-past-text',
-		'keywords' => array('image', 'content')
-	));
-
-	/**
-	 * Services block
-	 */
-	acf_register_block_type(array(
-		'name' => 'Designo Services Block',
-		'title' => __('Services'),
-		'desctiption' => __('Services Block'),
-		'render_template' => '/Blocks/services.php',
-		'icon' => 'https://fontawesome.com/icons/layer-group?f=classic&s=solid',
-		'keywords' => array('image', 'content')
-	));
-
-	/**
-	 * Services block
-	 */
-	acf_register_block_type(array(
-		'name' => 'Designo Info Card Block',
-		'title' => __('Info Cards'),
-		'desctiption' => __('info Cards Block'),
-		'render_template' => '/Blocks/info-cards.php',
-		'icon' => 'https://fontawesome.com/icons/layer-group?f=classic&s=solid',
-		'keywords' => array('image', 'content')
-	));
 }
 
 /**

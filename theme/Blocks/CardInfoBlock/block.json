@@ -1,0 +1,12 @@
+{
+    "name": "acf/designo-info-cards-block",
+    "title": "Info cards Block",
+    "description": "A custom Info Cards Block block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "info-cards.php"
+    }
+}

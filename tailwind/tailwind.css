@@ -15,7 +15,13 @@
  */
 @import "tailwindcss/base";
 @import "./custom/base.css";
+
+/**
+* Custom blocks Styles
+*/
 @import "../theme/Blocks/HeroBlock/style.css";
+@import "../theme/Blocks/CardInfoBlock/info-cards.css";
+@import "../theme/Blocks/ServicesBlock/services.css";
 
 /**
  * This injects Tailwind's component classes and any component classes
