@@ -1,0 +1,12 @@
+{
+    "name": "acf/designo-services-block",
+    "title": "Services Block",
+    "description": "A custom Services Block block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "services.php"
+    }
+}
