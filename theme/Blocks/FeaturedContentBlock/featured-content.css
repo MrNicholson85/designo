@@ -1,28 +1,28 @@
-.hero-content {
+.featured-content {
     @apply
     sm:mx-auto
     lg:mx-auto
     mid:mx-[40px]
-    bg-peach
+    bg-[#FDF3F0]
     md:rounded-[15px]
     lg:flex
     lg:justify-between
-    mb-0
-    md:mb-[120px]
+    mb-[120px]
     lg:mb-[160px]
     overflow-hidden
     relative
     z-10
-    h-[632px]
-    lg:h-[480px]
+    h-[865px]
+    md:h-[736px]
+    lg:h-[640px]
     items-center
     flex flex-col-reverse md:flex-row
 }
 
-.hero-content::after {
+.featured-content::after {
     @apply
     content-['']
-    bg-[url('../theme/assets/img/Oval.png')]
+    bg-[url('../theme/assets/img/featuredContentOval.png')]
     w-full
     h-full
     absolute
@@ -31,10 +31,11 @@
     right-0
     bg-[center_right_-215px]
     md:bg-[center_right_-100px]
-    lg:bg-[bottom_left]
+    lg:bg-[bottom_center]
+    z-[-1]
 }
 
-.hero-content_content {
+.featured-content_content {
     @apply 
     w-[327px]
     md:w-[573px] 
@@ -43,29 +44,29 @@
     lg:text-left
     text-eggshell
     z-10
-    lg:pl-[95px]
-    pt-[64px]
+    mt-[68px]
     lg:mt-0
 }
 
-.hero-content-title {
+.featured-content h2 {
     @apply
-    text-eggshell
+    text-peach
     font-jostMed
     mb-8
 }
 
-.hero-content-copy {
+.featured-content p {
     @apply
     w-[327px]
-    mb-[45px]
-    md:w-[445px]
+    md:w-[572px]
     lg:w-full
     mx-auto
     lg:mx-0
+    text-darkGrey
+    mb-[20px]
 }
 
-.hero-content_image {
+.featured-content_image {
     @apply
     w-full
     lg:w-[476px]
@@ -73,4 +74,5 @@
     h-[320px]
     bg-cover
     bg-center
+    mid:bg-top
 }

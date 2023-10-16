@@ -1,0 +1,12 @@
+{
+    "name": "acf/designo-featured-content-block",
+    "title": "Freatured Content Block",
+    "description": "A custom Freatured Content Block block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["image", "content"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "featured-content.php"
+    }
+}
