@@ -1,0 +1,75 @@
+.hero-content {
+    @apply
+    sm:mx-auto
+    lg:mx-auto
+    mid:mx-[40px]
+    bg-peach
+    md:rounded-[15px]
+    lg:flex
+    lg:justify-between
+    mb-[120px]
+    lg:mb-[160px]
+    overflow-hidden
+    relative
+    z-10
+    h-[632px]
+    lg:h-[480px]
+    items-center
+    flex flex-col-reverse md:flex-row
+}
+
+.hero-content::after {
+    @apply
+    content-['']
+    bg-[url('../theme/assets/img/Oval.png')]
+    w-full
+    h-full
+    absolute
+    bg-no-repeat
+    top-0
+    right-0
+    bg-[center_right_-215px]
+    md:bg-[center_right_-100px]
+    lg:bg-[bottom_left]
+}
+
+.hero-content_content {
+    @apply 
+    w-[327px]
+    md:w-[573px] 
+    lg:w-[540px]
+    text-center
+    lg:text-left
+    text-eggshell
+    z-10
+    lg:pl-[95px]
+    pt-[64px]
+    lg:mt-0
+}
+
+.hero-content-title {
+    @apply
+    text-eggshell
+    font-jostMed
+    mb-8
+}
+
+.hero-content-copy {
+    @apply
+    w-[327px]
+    mb-[45px]
+    md:w-[445px]
+    lg:w-full
+    mx-auto
+    lg:mx-0
+}
+
+.hero-content_image {
+    @apply
+    w-full
+    lg:w-[476px]
+    lg:h-full
+    h-[320px]
+    bg-cover
+    bg-center
+}
