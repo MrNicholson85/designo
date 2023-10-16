@@ -22,6 +22,7 @@
 @import "../theme/Blocks/HeroBlock/style.css";
 @import "../theme/Blocks/CardInfoBlock/info-cards.css";
 @import "../theme/Blocks/ServicesBlock/services.css";
+@import "../theme/Blocks/HeroContentBlock//hero-content.css";
 
 /**
  * This injects Tailwind's component classes and any component classes

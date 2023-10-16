@@ -1,0 +1,12 @@
+{
+    "name": "acf/designo-hero-content-block",
+    "title": "Hero Content Block",
+    "description": "A custom Hero Content Block block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hero-content.php"
+    }
+}
