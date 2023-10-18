@@ -12,8 +12,7 @@
     overflow-hidden
     relative
     z-10
-    h-[865px]
-    md:h-[736px]
+    h-auto
     lg:h-[640px]
     items-center
     flex flex-col-reverse md:flex-row
@@ -73,6 +72,5 @@
     lg:h-full
     h-[320px]
     bg-cover
-    bg-center
-    mid:bg-top
+    bg-[center_center]
 }

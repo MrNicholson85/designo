@@ -165,8 +165,14 @@ function wp_tailwind_scripts()
 	/**
 	 * Swiper Scripts and styles
 	 */
-
 	wp_enqueue_style('swiper-styles', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array(), WP_TAILWIND_VERSION);
+
+
+	/**
+	 * AOS and styles
+	 */
+	wp_enqueue_style('aos-styles', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), WP_TAILWIND_VERSION);
+
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

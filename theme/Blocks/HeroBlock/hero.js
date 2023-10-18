@@ -8,8 +8,4 @@
  * For esbuild documentation, please see:
  * https://esbuild.github.io/
  */
-/* global wp */
-
-export const HeroTest = () => {
-	console.log('Hero Block');
-};
+export const HeroTest = () => {};
