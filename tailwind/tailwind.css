@@ -24,6 +24,7 @@
 @import "../theme/Blocks/ServicesBlock/services.css";
 @import "../theme/Blocks/HeroContentBlock/hero-content.css";
 @import "../theme/Blocks/FeaturedContentBlock/featured-content.css";
+@import "../theme/Blocks/LocationItemsBlock/location-items.css";
 
 /**
  * This injects Tailwind's component classes and any component classes
