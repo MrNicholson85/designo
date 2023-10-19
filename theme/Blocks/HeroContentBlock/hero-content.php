@@ -18,14 +18,14 @@ $image = ACF::getField('hero_content_image', $data);
 $img_src = wp_get_attachment_image_src($image, 'large');
 ?>
 
-<div class="<?php echo esc_attr($className); ?> flex flex-col-reverse lg:flex-row">
+<div class="<?php echo esc_attr($className); ?> flex flex-col-reverse lg:flex-row" data-aos="fade-up" data-aos-delay="500">
     <div class="hero-content_content ">
         <?php
         printf(
             '
             <div>
-                <h1 class="hero-content-title">%1$s</h1>
-                <p class="hero-content-copy">%2$s</p>
+                <h1 class="hero-content-title" data-aos="fade-down" data-aos-delay="600">%1$s</h1>
+                <p class="hero-content-copy" data-aos="fade-up" data-aos-delay="700">%2$s</p>
             </div>
         ',
             $title = ACF::getField('hero_content_title', $data),
@@ -33,6 +33,6 @@ $img_src = wp_get_attachment_image_src($image, 'large');
         );
         ?>
     </div>
-    <div class="hero-content_image " style="background-image: url('<?php echo $img_src[0] ?>');">
+    <div class="hero-content_image" data-aos="zoom-in" data-aos-delay="1100" style="background-image: url('<?php echo $img_src[0] ?>');">
     </div>
 </div>

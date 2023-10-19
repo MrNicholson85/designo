@@ -1,0 +1,12 @@
+{
+    "name": "acf/designo-location-items-block",
+    "title": "Location Item Block",
+    "description": "A custom Info Cards Block block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["acf","text", "image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "location-items.php"
+    }
+}

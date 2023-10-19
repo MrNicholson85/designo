@@ -1,4 +1,6 @@
 {
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
     "name": "acf/designo-hero-block",
     "title": "Hero Block",
     "description": "A custom Hero Block block that uses ACF fields.",
@@ -8,5 +10,10 @@
     "acf": {
         "mode": "preview",
         "renderTemplate": "hero.php"
-    }
+    },
+    "styles": [
+        { "name": "default", "label": "Standard Hero", "isDefault": true },
+        { "name": "with-content", "label": "Full Width" },
+        { "name": "small", "label": "Short Hero Full Width" }
+      ]
 }

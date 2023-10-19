@@ -50,6 +50,7 @@
 	"prettier": "@wordpress/prettier-config",
 	"dependencies": {
 		"@wordpress/blocks": "^12.19.0",
+		"aos": "^2.3.4",
 		"jquery": "^3.7.1",
 		"swiper": "^10.3.1"
 	}

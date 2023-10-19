@@ -12,6 +12,7 @@
 import $ from 'jquery';
 import { HeroTest } from '../theme/Blocks/HeroBlock/hero';
 import { CarouselTest } from '../theme/Blocks/CarouselBlock/carousel';
+import AOS from 'aos';
 
 function menuToggle() {
 	const menuToggle = document.querySelector('.dps-menu-toggle');
@@ -27,4 +28,5 @@ $(document).ready(function () {
 	menuToggle();
 	HeroTest();
 	CarouselTest();
+	AOS.init();
 });

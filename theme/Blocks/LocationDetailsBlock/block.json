@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "acf/designo-location-details-block",
+    "title": "location details Block",
+    "description": "A custom location details Block block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "location-details.php"
+    },
+    "styles": [
+        { "name": "Standard", "label": "Standard Location Detail", "isDefault": true },
+        { "name": "Flipped", "label": "Flipped Location Details" }
+      ]
+}

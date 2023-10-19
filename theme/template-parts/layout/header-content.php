@@ -13,7 +13,7 @@ $header_logo = get_field('brand_logo', 'option');
 
 <header id="masthead" class="dps-wrapper">
 	<div class="dps-nav-wrapper">
-		<div class="brand-logo">
+		<div class="brand-logo" data-aos="fade-up">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 				<img src="<?php echo esc_url($header_logo['url']); ?>" />
 			</a>
@@ -30,10 +30,10 @@ $header_logo = get_field('brand_logo', 'option');
 				echo '<img class="md:hidden dps-menu-toggle" src="' . DPS_DIR_URI . '/assets/img/menu.svg" />';
 				echo '<ul id="menu-dps-primary-menu" class="sm:hidden md:flex navbar-wrapper">';
 
-				foreach ($menu_items as $menu_item) {
+				foreach ($menu_items as $key => $menu_item) {
 					$title = $menu_item->title;
 					$url = $menu_item->url;
-					echo '<li><a href="' . $url . '" class="text-white">' . $title . '</a></li>';
+					echo '<li data-aos="fade-up" data-aos-delay="' . ($key + 1 . '00') . '"><a href="' . $url . '" class="text-white">' . $title . '</a></li>';
 				}
 				echo '</ul>';
 				echo '</div>';

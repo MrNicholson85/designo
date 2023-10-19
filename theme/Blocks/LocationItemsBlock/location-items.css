@@ -1,0 +1,65 @@
+.location-items {
+    @apply
+    relative
+    dps-wrapper
+    mb-[160px]
+}
+
+.location-items::before {
+    @apply
+    content-['']
+    bg-[url('../theme/assets/img/RectangleFlipped.png')]
+    h-[594px]
+    w-[1006px]
+    absolute
+    hidden
+    z-0
+    lg:flex
+    transform
+    translate-x-[267px]
+    translate-y-[239px];
+}
+
+.location-items .locations {
+    @apply
+    grid 
+    lg:flex
+    lg:justify-between
+    md:gap-[102px]
+    gap-[80px]
+    lg:gap-[30px]
+    relative
+    z-10
+}
+
+.location-items .location-item {
+    @apply
+    grid
+    gap-[48px]
+    items-center
+    lg:grid
+    justify-center
+    content-center
+    text-center
+    mx-[24px]
+    md:mx-0
+    mid:mx-[40px]
+}
+
+.location-item__image {
+    @apply
+    mx-auto
+    w-[202px]
+}
+
+.locarion-item__copy {
+    @apply
+    md:mb-[32px]
+}
+
+.location-item__cta  {
+    @apply
+    w-[152px]
+    mx-auto
+    !px-0
+}
