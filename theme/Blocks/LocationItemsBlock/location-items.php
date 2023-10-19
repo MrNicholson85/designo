@@ -17,16 +17,16 @@ $data = $block['data'];
 $location_repeater = ACF::getRowsLayout('location_repeater', $data);
 ?>
 
-<div class="<?php echo esc_attr($className); ?>">
+<div class="<?php echo esc_attr($className); ?>" data-aos="fade-up" data-aos-delay="500">
     <?php
     echo '<ul class="locations">';
-    foreach ($location_repeater as $item) {
+    foreach ($location_repeater as $key => $item) {
         $title = ACF::getField('item_title', $item);
         $image = ACF::getField('item_image', $item);
         $link = ACF::getField('item_cta', $item);
         $img_src = wp_get_attachment_image_src($image, 'large');
     ?>
-        <li class="location-item">
+        <li class="location-item" data-aos="fade-up" data-aos-delay="<?php echo ($key + 5) . '00' ?>">
             <img class="location-item__image" src="<?php echo esc_url($img_src[0]); ?>" />
             <div>
                 <h3 class="location-item__title"><?php echo __($title) ?></h3>

@@ -35,16 +35,18 @@ if ($image_placement === '1') {
 }
 ?>
 
-<div class="<?php echo esc_attr($className); ?> flex <?php echo $flexClass; ?> lg:flex-row">
+<div class="<?php echo esc_attr($className); ?> flex <?php echo $flexClass; ?> lg:flex-row" data-aos="zoom-in" data-aos-delay="500">
     <?php if ($image_placement === '1') : ?>
-        <div class="featured-content_image " style="background-image: url('<?php echo $img_src[0] ?>');">
+        <div class="featured-content_image" data-aos="fade-up" data-aos-delay="600" style="background-image: url('<?php echo $img_src[0] ?>');">
         </div>
     <?php endif; ?>
     <div class="featured-content_content <?php echo $contentPadding ?>">
         <?php if ($title) : ?>
-            <h2><?php echo __($title); ?></h2>
+            <h2 data-aos="fade-up" data-aos-delay="700"><?php echo __($title); ?></h2>
         <?php endif; ?>
-        <?php echo apply_filters('the_content', $copy) ?>
+        <div data-aos="fade-up" data-aos-delay="800">
+            <?php echo apply_filters('the_content', $copy) ?>
+        </div>
     </div>
     <?php if ($image_placement === '') : ?>
         <div class="featured-content_image " style="background-image: url('<?php echo $img_src[0] ?>');">
