@@ -22,7 +22,7 @@
 .loc-content {
     @apply
     bg-[#FDF3F0]
-    rounded-[15px]
+    md:rounded-[15px]
     px-[95px]
     py-[88px]
     lg:w-[730px]
@@ -57,7 +57,7 @@
     @apply
     lg:w-[350px]
     relative
-    rounded-[15px]
+    md:rounded-[15px]
     h-[326px]
     overflow-hidden
 }
