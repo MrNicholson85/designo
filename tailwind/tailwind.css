@@ -27,6 +27,7 @@
 @import "../theme/Blocks/LocationItemsBlock/location-items.css";
 @import "../theme/Blocks/LocationDetailsBlock/location-details.css";
 @import "../theme/Blocks/ContactFromBlock/contact-form.css";
+@import "../theme/Blocks/ProjectItemsBlock/project-items.css";
 
 /**
  * This injects Tailwind's component classes and any component classes

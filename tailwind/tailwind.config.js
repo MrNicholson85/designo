@@ -13,7 +13,11 @@ module.exports = {
 	],
 	theme: {
 		// Extend the default Tailwind theme.
-		extend: {},
+		extend: {
+			gridTemplateColumns: {
+				projectCard: '339px auto',
+			},
+		},
 		screens: {
 			sm: '375px',
 			md: '768px',

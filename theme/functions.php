@@ -155,6 +155,24 @@ function wp_tailwind_widgets_init()
 add_action('widgets_init', 'wp_tailwind_widgets_init');
 
 /**
+ * Enqueue the block editor script.
+ */
+function wp_tailwind_enqueue_block_editor_script()
+{
+	wp_enqueue_script(
+		'wp-tailwind-editor',
+		get_template_directory_uri() . '/js/block-editor.min.js',
+		array(
+			'wp-blocks',
+			'wp-edit-post',
+		),
+		WP_TAILWIND_VERSION,
+		true
+	);
+}
+add_action('enqueue_block_editor_assets', 'wp_tailwind_enqueue_block_editor_script');
+
+/**
  * Enqueue scripts and styles.
  */
 function wp_tailwind_scripts()
@@ -178,25 +196,7 @@ function wp_tailwind_scripts()
 		wp_enqueue_script('comment-reply');
 	}
 }
-add_action('wp_enqueue_scripts', 'wp_tailwind_scripts');
-
-/**
- * Enqueue the block editor script.
- */
-function wp_tailwind_enqueue_block_editor_script()
-{
-	wp_enqueue_script(
-		'wp-tailwind-editor',
-		get_template_directory_uri() . '/js/block-editor.min.js',
-		array(
-			'wp-blocks',
-			'wp-edit-post',
-		),
-		WP_TAILWIND_VERSION,
-		true
-	);
-}
-add_action('enqueue_block_editor_assets', 'wp_tailwind_enqueue_block_editor_script');
+add_action('wp_enqueue_scripts', 'wp_tailwind_scripts', 100);
 
 /**
  * Enqueue the script necessary to support Tailwind Typography in the block

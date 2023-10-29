@@ -1,0 +1,12 @@
+{
+    "name": "acf/designo-project-items-block",
+    "title": "Project Items  Block",
+    "description": "A custom Project Items Block block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "project-items.php"
+    }
+}
