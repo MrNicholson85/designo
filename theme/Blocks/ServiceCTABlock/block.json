@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "acf/designo-service-cta-block",
+    "title": "Service CTA Block",
+    "description": "A custom Service CTA Block block that uses ACF fields.",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "service-cta.php"
+    }
+}

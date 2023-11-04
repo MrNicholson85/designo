@@ -1,0 +1,46 @@
+.service-cta {
+    @apply
+    relative
+    lg:flex
+    lg:justify-between
+    grid
+    mb-[160px]
+    mx-auto
+    lg:mx-0
+    w-[327px]
+    md:w-[689px]
+    lg:w-[1111px]
+    gap-6
+}
+
+.service-cta .service-cta__cta {
+    @apply
+    lg:w-[541px]
+    h-[250px]
+    md:h-[200px]
+    lg:h-[308px]
+    rounded-[15px]
+    overflow-hidden
+    grid
+    place-content-center
+    text-center
+    bg-no-repeat
+    bg-cover
+
+}
+
+.service-cta .service-cta__cta h2 {
+    @apply
+    text-eggshell
+    mb-[24px]
+}
+
+.service-cta .service-cta__cta a {
+    @apply
+    text-eggshell
+    text-[15px]
+    uppercase
+    tracking-[5px]
+    flex
+    gap-5
+}
