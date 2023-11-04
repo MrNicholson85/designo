@@ -1,8 +1,10 @@
 .project_items {
     @apply
-    flex
+    grid
     flex-col-reverse
     lg:flex-row
+    lg:grid-cols-3
+    grid-cols-1
     gap-[31px]
     mb-[160px]
     relative
