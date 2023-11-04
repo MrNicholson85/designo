@@ -48,11 +48,12 @@
     mid:mx-[40px]
 }
 
-.card-item__image {
+img.card-item__image {
     @apply
     mx-auto 
     md:mb-[48px] 
     lg:mb-0
+    mt-0
 }
 
 .card-item__copy {

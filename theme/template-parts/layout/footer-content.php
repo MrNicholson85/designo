@@ -30,12 +30,12 @@ $last_cal_link = ACF::getField('last_cal_link', $group_last_call);
 <footer id="colophon" class="footer" data-aos="fade" data-aos-delay="500">
 	<div class="last-call" data-aos="fade-up" data-aos-delay="600">
 		<div class="md:w-[499px] w-[85%] mid:mx-0 mx-auto">
-			<h2 class="lc-title" data-aos="fade-up" data-aos-delay="700"><?php echo __($last_call_title); ?></h2>
-			<div class="lc-copy" data-aos="fade-up" data-aos-delay="800">
+			<h2 class="lc-title" data-aos="fade-up"><?php echo __($last_call_title); ?></h2>
+			<div class="lc-copy" data-aos="fade-up">
 				<?php echo apply_filters('the_content', $last_call_copy); ?>
 			</div>
 		</div>
-		<div class="lc-link" data-aos="fade-up" data-aos-delay="900">
+		<div class="lc-link" data-aos="fade-up">
 			<?php
 			printf(
 				'
@@ -51,7 +51,7 @@ $last_cal_link = ACF::getField('last_cal_link', $group_last_call);
 	<div class="footer-columns" data-aos="fade-up" data-aos-delay="600">
 		<div class="dps-wrapper">
 			<div class="fc-top">
-				<div class="fc-image" data-aos="fade-up" data-aos-delay="1100">
+				<div class="fc-image" data-aos="fade-up">
 					<?php
 					printf(
 						'<img class="w-full" src="%1$s" />',
@@ -64,7 +64,7 @@ $last_cal_link = ACF::getField('last_cal_link', $group_last_call);
 					echo "<ul>";
 					foreach ($links as $link) {
 						printf(
-							'<li data-aos="fade-up" data-aos-delay="1200"><a href="%2$s" target="%3$s">%1$s</a></li>',
+							'<li data-aos="fade-up"><a href="%2$s" target="%3$s">%1$s</a></li>',
 							$link['nav_link']['title'],
 							$link['nav_link']['url'],
 							$link['nav_link']['target'],
@@ -75,7 +75,7 @@ $last_cal_link = ACF::getField('last_cal_link', $group_last_call);
 				</div>
 			</div>
 			<div class="fc-bottom">
-				<div class="fc-locations" data-aos="fade-up" data-aos-delay="1300">
+				<div class="fc-locations" data-aos="fade-up">
 					<?php
 					printf(
 						'
@@ -87,7 +87,7 @@ $last_cal_link = ACF::getField('last_cal_link', $group_last_call);
 					);
 					?>
 				</div>
-				<div class="fc-contact" data-aos="fade-up" data-aos-delay="1400">
+				<div class="fc-contact" data-aos="fade-up">
 					<?php
 					printf(
 						'
@@ -99,7 +99,7 @@ $last_cal_link = ACF::getField('last_cal_link', $group_last_call);
 					);
 					?>
 				</div>
-				<div class="fc-social" data-aos="fade-up" data-aos-delay="1500">
+				<div class="fc-social" data-aos="fade-up">
 					<?php
 					foreach ($group_social['social_icons'] as $icon) {
 						printf(

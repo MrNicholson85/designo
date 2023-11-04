@@ -27,7 +27,7 @@ $img_src = wp_get_attachment_image_src($image, 'large');
         echo '<h1 class="hero-title" data-aos="fade-up" data-aos-delay="500">' . $title . '</h1>';
         echo '<p class="hero-copy" data-aos="fade-up" data-aos-delay="700">' . $content . '</p>';
         if ($link) {
-            echo '<a class="dps-light-btn" href="' . $link['url'] . '" target="' . $link['target'] . '" data-aos="fade-up" data-aos-delay="900">' . $link['title'] . '</a>';
+            echo '<div data-aos="fade-up" data-aos-delay="900"><a class="dps-light-btn" href="' . $link['url'] . '" target="' . $link['target'] . '">' . $link['title'] . '</a></div>';
         }
         ?>
     </div>
