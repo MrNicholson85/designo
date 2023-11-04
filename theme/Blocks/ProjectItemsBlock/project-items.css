@@ -29,6 +29,9 @@
     lg:block
     mx-auto
     md:grid-cols-projectCard
+    transition
+    duration-300
+    ease-in-out
 
 }
 
@@ -60,4 +63,6 @@
 .project_items .item_card .item_content .item_title h3 {
     @apply
     text-peach
+    mt-0
+    mb-0
 }

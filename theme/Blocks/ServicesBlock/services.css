@@ -55,7 +55,8 @@
     rounded-[15px]
     h-[250px]
     md:h-[200px]
-    lg:h-full;
+    lg:h-full
+
 }
 
 .services_item::before {
@@ -67,6 +68,9 @@
     w-full
     h-full
     z-10
+    transition
+    duration-300
+    ease-in-out;
 }
 
 .services_item  h2 {
@@ -83,6 +87,8 @@
     flex
     gap-[21px]
     justify-center
+    items-center
+    text-eggshell
 }
 
 
