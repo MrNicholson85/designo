@@ -1,7 +1,7 @@
 {
-    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
     "apiVersion": 3,
-    "name": "acf/designo-hero-block",
+    "name": "designo-hero-block",
     "title": "Hero Block",
     "description": "A custom Hero Block block that uses ACF fields.",
     "category": "formatting",

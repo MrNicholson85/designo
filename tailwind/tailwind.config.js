@@ -43,6 +43,7 @@ module.exports = {
 		preflight: includePreflight,
 	},
 	plugins: [
+		'prettier-plugin-tailwindcss',
 		// Extract colors and widths from `theme.json`.
 		require('@_tw/themejson')(require('../theme/theme.json')),
 

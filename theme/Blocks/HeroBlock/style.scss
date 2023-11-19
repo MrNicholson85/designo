@@ -1,0 +1,83 @@
+.hero {
+	@apply sm:mx-auto
+    lg:mx-auto
+    mid:mx-[40px]
+    bg-peach
+    md:rounded-[15px]
+    grid
+    lg:flex
+    lg:justify-between
+    pt-[60px]
+    lg:pt-[145px]
+    px-[24px]
+    md:px-[40px]
+    lg:px-[95px]
+    mb-[120px]
+    lg:mb-[160px]
+    overflow-hidden
+    relative
+    z-10
+    gap-[80px]
+    lg:gap-0;
+
+	&::after {
+		@apply content-['']
+        bg-[url('../theme/assets/img/Oval.png')]
+        w-full
+        h-full
+        absolute
+        bg-no-repeat
+        top-0
+        right-0
+        bg-[center_right_-215px]
+        md:bg-[center_right_-100px]
+        lg:bg-right-top;
+	}
+
+	&__content {
+		@apply w-[327px]
+        md:w-[573px] 
+        lg:w-[540px]
+        mx-auto
+        text-center
+        lg:text-left
+        text-eggshell
+        z-10;
+
+		&-title {
+			@apply text-eggshell
+            font-jostMed
+            mb-8;
+		}
+
+		&-copy {
+			@apply w-[327px]
+            mb-[45px]
+            md:w-[445px]
+            lg:w-full
+            mx-auto
+            lg:mx-0;
+		}
+	}
+
+	&__image {
+		@apply w-[248px]
+        mx-auto
+        translate-y-[103px]
+        lg:translate-y-0;
+
+		img {
+			@apply m-0
+            p-0
+            w-full;
+		}
+	}
+
+	&.is-style-small .hero__content {
+		@apply text-center;
+	}
+
+	&.is-style-small {
+		@apply pt-[64px];
+	}
+}
