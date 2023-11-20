@@ -1,5 +1,6 @@
 {
-    "name": "acf/designo-services-block",
+    "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+    "name": "designo-services-block",
     "title": "Services Block",
     "description": "A custom Services Block block that uses ACF fields.",
     "category": "formatting",

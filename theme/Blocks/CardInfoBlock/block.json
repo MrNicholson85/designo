@@ -1,5 +1,6 @@
 {
-    "name": "acf/designo-info-cards-block",
+    "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+    "name": "designo-info-cards-block",
     "title": "Info cards Block",
     "description": "A custom Info Cards Block block that uses ACF fields.",
     "category": "formatting",
