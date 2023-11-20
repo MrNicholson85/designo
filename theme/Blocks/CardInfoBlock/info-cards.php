@@ -19,7 +19,7 @@ $info_cards = ACF::getRowsLayout('info_cards', $data);
 
 <div class="<?php echo esc_attr($className); ?>">
     <?php
-    echo '<ul class="cards">';
+    echo '<ul class="info-cards__cards">';
     foreach ($info_cards as $key => $card) {
         $title = ACF::getField('card_item_title', $card);
         $copy = ACF::getField('card_item_content', $card);
@@ -27,12 +27,12 @@ $info_cards = ACF::getRowsLayout('info_cards', $data);
         $link = ACF::getField('card_item_link', $card);
         $img_src = wp_get_attachment_image_src($image, 'large');
     ?>
-        <li class="card-item" data-aos="fade-up" data-aos-delay="<?php echo $key + 1 . '00' ?>">
-            <img class="card-item__image" src="<?php echo esc_url($img_src[0]); ?>" />
+        <li class="info-cards__card-item" data-aos="fade-up" data-aos-delay="<?php echo $key + 1 . '00' ?>">
+            <img class="info-cards__card-item-image" src="<?php echo esc_url($img_src[0]); ?>" />
             <div>
-                <h3 class="card-item__title" data-aos="fade-up" data-aos-delay="<?php echo $key + 2 . '00' ?>"><?php echo __($title) ?></h3>
+                <h3 class="info-cards__card-item-title" data-aos="fade-up" data-aos-delay="<?php echo $key + 2 . '00' ?>"><?php echo __($title) ?></h3>
                 <?php if ($copy) : ?>
-                    <div class="card-item__copy" data-aos="fade-up" data-aos-delay="<?php echo $key + 3 . '00' ?>">
+                    <div class="info-cards__card-item-copy" data-aos="fade-up" data-aos-delay="<?php echo $key + 3 . '00' ?>">
                         <?php echo apply_filters('the_content', $copy); ?>
                     </div>
                 <?php endif; ?>
