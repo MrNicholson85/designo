@@ -37,10 +37,10 @@ if ($image_placement === '1') {
 
 <div class="<?php echo esc_attr($className); ?> flex <?php echo $flexClass; ?> lg:flex-row" data-aos="zoom-in" data-aos-delay="500">
     <?php if ($image_placement === '1') : ?>
-        <div class="featured-content_image" data-aos="fade-up" data-aos-delay="600" style="background-image: url('<?php echo $img_src[0] ?>');">
+        <div class="featured-content__image" data-aos="fade-up" data-aos-delay="600" style="background-image: url('<?php echo $img_src[0] ?>');">
         </div>
     <?php endif; ?>
-    <div class="featured-content_content <?php echo $contentPadding ?>">
+    <div class="featured-content__content <?php echo $contentPadding ?>">
         <?php if ($title) : ?>
             <h2 data-aos="fade-up" data-aos-delay="700"><?php echo __($title); ?></h2>
         <?php endif; ?>
@@ -49,7 +49,7 @@ if ($image_placement === '1') {
         </div>
     </div>
     <?php if ($image_placement === '') : ?>
-        <div class="featured-content_image " style="background-image: url('<?php echo $img_src[0] ?>');">
+        <div class="featured-content__image " style="background-image: url('<?php echo $img_src[0] ?>');">
         </div>
     <?php endif; ?>
 </div>

@@ -1,0 +1,70 @@
+.featured-content {
+	@apply sm:mx-auto
+    lg:mx-auto
+    mid:mx-[40px]
+    bg-[#FDF3F0]
+    md:rounded-[15px]
+    lg:flex
+    lg:justify-between
+    mb-[120px]
+    lg:mb-[160px]
+    overflow-hidden
+    relative
+    z-10
+    h-auto
+    lg:h-[640px]
+    items-center
+    flex flex-col-reverse md:flex-row;
+
+	&::after {
+		@apply content-['']
+        bg-[url('../theme/assets/img/featuredContentOval.png')]
+        w-full
+        h-full
+        absolute
+        bg-no-repeat
+        top-0
+        right-0
+        bg-[center_right_-215px]
+        md:bg-[center_right_-100px]
+        lg:bg-[bottom_center]
+        z-[-1];
+	}
+
+	&__content {
+		@apply w-[327px]
+        md:w-[573px] 
+        lg:w-[540px]
+        text-center
+        lg:text-left
+        text-eggshell
+        z-10
+        mt-[68px]
+        lg:mt-0;
+
+		h2 {
+			@apply text-peach
+            font-jostMed
+            mb-8;
+		}
+
+		p {
+			@apply w-[327px]
+            md:w-[572px]
+            lg:w-full
+            mx-auto
+            lg:mx-0
+            text-darkGrey
+            mb-[20px];
+		}
+	}
+
+	&__image {
+		@apply w-full
+        lg:w-[476px]
+        lg:h-full
+        h-[320px]
+        bg-cover
+        bg-[center_center];
+	}
+}

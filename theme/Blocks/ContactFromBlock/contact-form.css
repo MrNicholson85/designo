@@ -1,6 +1,5 @@
 .contact-form {
-    @apply
-    bg-peach
+	@apply bg-peach
     lg:rounded-[15px]
     gap-[100px]
     lg:flex
@@ -9,47 +8,42 @@
     lg:px-[96px]
     lg:py-[55px]
     items-center
-    mb-[160px]
+    mb-[160px];
 }
 
 .contact-form h2 {
-    @apply
-    text-[#ffffff]
-    pb-[32px]
+	@apply text-[#ffffff]
+    pb-[32px];
 }
 
 .contact-form p {
-    @apply
-    text-[#ffffff]
+	@apply text-[#ffffff]
     max-w-[445px]
     text-[16px]
-    leading-[26px]
+    leading-[26px];
 }
 
 .gform_wrapper form .gform_body .gform_fields .ginput_container input,
 .gform_wrapper form .gform_body .gform_fields .ginput_container textarea {
-    background-color: transparent;
-    @apply
-    border-b-[1px]
+	background-color: transparent;
+	@apply border-b-[1px]
     border-b-[#ffffff]
     border-l-0
     border-t-0
     border-r-0
     rounded-none
     shadow-none
-    text-[#ffffff89]
+    text-[#ffffff89];
 }
 
 .gform_wrapper form .gform_footer {
-    @apply
-    flex
+	@apply flex
     justify-center
-    md:justify-end
+    md:justify-end;
 }
 
 .gform_wrapper form .gform_footer input {
-    @apply
-        !text-center
+	@apply !text-center
         !font-jostMed
         !text-darkGrey
         hover:!text-[#ffffff]
@@ -59,5 +53,5 @@
         !py-4
         !px-[48px]
         !uppercase
-        !no-underline
+        !no-underline;
 }
