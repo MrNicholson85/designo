@@ -34,7 +34,7 @@
 		"watch:tailwind:editor": "npm run development:tailwind:editor -- --watch",
 		"watch:esbuild": "npm run development:esbuild -- --watch",
 		"watch": "run-p watch:**",
-		"watch:browser-sync": "browser-sync start --proxy \"http://wp-tailwind.local\" --files \"theme\" --no-notify --no-inject-changes",
+		"watch:browser-sync": "browser-sync start --proxy \"https://designo.local\" --files \"theme\" --no-notify --no-inject-changes",
 		"lint:eslint": "npx eslint theme/",
 		"lint:prettier": "npx prettier --check .",
 		"lint": "run-p lint:*",

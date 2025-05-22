@@ -8,12 +8,12 @@
  * @package wp-tailwind
  */
 
-$header_logo = get_field('brand_logo', 'option');
+$header_logo = get_field('company_logo', 'option');
 ?>
 
 <header id="masthead" class="dps-wrapper">
 	<div class="dps-nav-wrapper">
-		<div class="brand-logo" data-aos="fade-up">
+		<div class="brand-logo">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 				<img src="<?php echo esc_url($header_logo['url']); ?>" />
 			</a>
@@ -33,7 +33,7 @@ $header_logo = get_field('brand_logo', 'option');
 				foreach ($menu_items as $key => $menu_item) {
 					$title = $menu_item->title;
 					$url = $menu_item->url;
-					echo '<li data-aos="fade-up" data-aos-delay="' . ($key + 1 . '00') . '"><a href="' . $url . '" class="text-white">' . $title . '</a></li>';
+					echo '<li data-aos-delay="' . ($key + 1 . '00') . '"><a href="' . $url . '" class="text-white">' . $title . '</a></li>';
 				}
 				echo '</ul>';
 				echo '</div>';

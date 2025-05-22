@@ -13,7 +13,7 @@ use wp_tailwind\theme\Fields\ACF;
 $group_logo = get_field('group_logo', 'option');
 $logo = ACF::getField('footer_branding_logo', $group_logo);
 
-$group_links = get_field('group_links', 'option');
+$group_links = get_field('group_link', 'option');
 $links = $group_links['footer_nav'];
 
 $group_location = get_field('group_location', 'option');
