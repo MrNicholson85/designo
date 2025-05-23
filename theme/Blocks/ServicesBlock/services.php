@@ -17,7 +17,7 @@ $data = $block['data'];
 $service_items = ACF::getRowsLayout('service_items', $data);
 ?>
 
-<div class="<?php echo esc_attr($className); ?>">
+<div class="<?php echo esc_attr($className); ?> fadeIn">
     <div class="services__grid">
         <?php foreach ($service_items as $key => $item) : ?>
             <?php
@@ -27,9 +27,9 @@ $service_items = ACF::getRowsLayout('service_items', $data);
             $link = ACF::getField('service_link', $item);
             ?>
 
-            <div class="services__item" data-aos="fade-up" style="background-image: url('<?php echo esc_url($img_src[0]); ?>')">
-                <h2 class="services__title" data-aos="fade-up" data-aos-delay="500"><?php echo esc_html($title); ?></h2>
-                <a class="services__link" data-aos="fade-up" data-aos-delay="700" href="<?php echo esc_url($link['url']); ?>" target="<?php echo esc_attr($link['target']); ?>">
+            <div class="services__item" style="background-image: url('<?php echo esc_url($img_src[0]); ?>')">
+                <h2 class="services__title" data-aos-delay="500"><?php echo esc_html($title); ?></h2>
+                <a class="services__link" data-aos-delay="700" href="<?php echo esc_url($link['url']); ?>" target="<?php echo esc_attr($link['target']); ?>">
                     <?php echo esc_html($link['title']); ?>
                     <img src="<?php echo DPS_DIR_URI . '/assets/img/right-chevron.svg'; ?>" />
                 </a>

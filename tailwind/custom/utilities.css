@@ -80,3 +80,16 @@ body {
         duration-300
         ease-in-out
 }
+
+/* Animations */
+.dps-wrapper > .fadeIn {
+    scale: .8;
+    opacity: 0;
+    animation: fadeIn linear forwards;
+    animation-timeline: view();
+    animation-range: 100px 600px;
+}
+
+@keyframes fadeIn {
+to { scale: 1; opacity: 1;}
+}
