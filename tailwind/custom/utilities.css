@@ -82,7 +82,7 @@ body {
 }
 
 /* Animations */
-.dps-wrapper > .fadeIn {
+.fadeIn {
     scale: .8;
     opacity: 0;
     animation: fadeIn linear forwards;

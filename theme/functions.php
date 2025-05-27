@@ -179,6 +179,7 @@ function wp_tailwind_scripts()
 {
 	wp_enqueue_style('wp-tailwind-style', get_stylesheet_uri(), array(), WP_TAILWIND_VERSION);
 	wp_enqueue_script('wp-tailwind-script', get_template_directory_uri() . '/js/script.min.js', array(), WP_TAILWIND_VERSION, true);
+	wp_enqueue_script('font-awesome-kit', 'https://kit.fontawesome.com/36d832afa0.js', array(), WP_TAILWIND_VERSION, true);
 
 	/**
 	 * Swiper Scripts and styles
@@ -291,3 +292,12 @@ function smartwp_remove_wp_block_library_css()
 	wp_dequeue_style('wc-blocks-style'); // Remove WooCommerce block CSS
 }
 add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
+
+function fontawesome_icon_dashboard()
+{
+	echo "<style type='text/css' media='screen'>
+      #adminmenu #menu-posts-press div.wp-menu-image:before {
+	 font-family:'FontAwesome' !important; content:'\f0a4'; }	
+	 </style>";
+}
+add_action('admin_head', 'fontawesome_icon_dashboard');

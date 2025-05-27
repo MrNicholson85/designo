@@ -42,6 +42,11 @@
         md:mx-0
         mid:mx-[40px];
 
+		&-copy-wrapper {
+			@apply grid
+            gap-y-[32px];
+		}
+
 		&-image {
 			@apply mx-auto 
             md:mb-[48px] 
@@ -49,13 +54,12 @@
             mt-0;
 		}
 
-		&-copy {
-			@apply md:mb-[32px];
+		&-title {
+			@apply uppercase;
 		}
 
-		&-cta {
-			@apply md:w-[152px]
-            mx-auto;
+		&-copy {
+			@apply md:mb-[32px];
 		}
 	}
 }

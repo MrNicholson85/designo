@@ -30,8 +30,8 @@
         },
         {
             "key": "field_682df1a8ca4d9",
-            "label": "Lastcall",
-            "name": "footer_settings",
+            "label": "Last Call Group",
+            "name": "last_call_group",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -46,8 +46,8 @@
             "sub_fields": [
                 {
                     "key": "field_682df46bca4db",
-                    "label": "Lastcall Header",
-                    "name": "lastcall_header",
+                    "label": "Last Call Title",
+                    "name": "last_call_title",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -67,8 +67,8 @@
                 },
                 {
                     "key": "field_682df47bca4dc",
-                    "label": "Lastcall Content",
-                    "name": "lastcall_content",
+                    "label": "Last Call Copy",
+                    "name": "last_call_copy",
                     "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
@@ -88,8 +88,8 @@
                 },
                 {
                     "key": "field_682df48fca4dd",
-                    "label": "Lastcall CTA",
-                    "name": "lastcall_cta",
+                    "label": "Last Call Link",
+                    "name": "last_call_link",
                     "aria-label": "",
                     "type": "link",
                     "instructions": "",
@@ -208,6 +208,219 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_6830924df94b1",
+            "label": "Group Location",
+            "name": "group_location",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_68309273f94b2",
+                    "label": "Location Section title",
+                    "name": "location_section_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6830928cf94b3",
+                    "label": "Location Section Copy",
+                    "name": "location_section_copy",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_683092adf94b4",
+            "label": "Group Contact",
+            "name": "group_contact",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_683092adf94b5",
+                    "label": "Contact title",
+                    "name": "contact_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_683092adf94b6",
+                    "label": "Contact Copy",
+                    "name": "contact_copy",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_68309622f94b7",
+            "label": "Group Social",
+            "name": "group_social",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6830969ef94b8",
+                    "label": "Social Icons",
+                    "name": "social_icons",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_683096b7f94b9",
+                            "label": "Icons",
+                            "name": "icons",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "fa-brands fa-square-facebook": "Facebook",
+                                "fa-brands fa-square-youtube": "YouTube",
+                                "fa-brands fa-x-twitter": "X (Twitter)",
+                                "fa-brands fa-pinterest": "Pinterset",
+                                "fa-brands fa-instagram": "Instagram"
+                            },
+                            "default_value": "fa-brands fa-square-facebook",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0,
+                            "parent_repeater": "field_6830969ef94b8"
+                        },
+                        {
+                            "key": "field_6830c525515c5",
+                            "label": "Social URL",
+                            "name": "social_url",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "allow_in_bindings": 0,
+                            "parent_repeater": "field_6830969ef94b8"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "location": [
@@ -228,5 +441,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747858622
+    "modified": 1748026738
 }

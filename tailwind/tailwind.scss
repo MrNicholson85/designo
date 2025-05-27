@@ -15,10 +15,12 @@
  */
 @import "tailwindcss/base";
 @import "./custom/base.css";
+@import "./custom/components/footer.scss";
 
 /**
 * Custom blocks Styles
 */
+@import "../theme/Blocks/HeroBlock/style.scss";
 @import "../theme/Blocks/HeroBlock/style.scss";
 @import "../theme/Blocks/CardInfoBlock/info-cards.scss";
 @import "../theme/Blocks/ServicesBlock/services.scss";
