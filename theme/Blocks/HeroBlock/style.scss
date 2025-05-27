@@ -85,6 +85,18 @@
 	}
 
 	&.is-style-small {
-		@apply pt-[64px];
+		@apply h-[252px] flex justify-center items-center;
+
+		.hero__content {
+			@apply h-auto ml-0 grid items-center gap-6;
+
+			&-title {
+				@apply mb-0;
+			}
+
+			&-copy {
+				@apply mx-auto px-4 mb-0;
+			}
+		}
 	}
 }
