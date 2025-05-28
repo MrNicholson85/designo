@@ -13,7 +13,7 @@ $info_cards = ACF::getRowsLayout('info_cards', $data);
 $animation = ACF::getField('block_animation', $data);
 ?>
 
-<div class="<?php echo esc_attr(trim($className)); ?> <?php echo $animation ?>">
+<div class="<?php echo esc_attr(trim($className)); ?>">
     <ul class="info-cards__cards">
         <?php foreach ($info_cards as $key => $card) : ?>
             <?php
@@ -25,17 +25,17 @@ $animation = ACF::getField('block_animation', $data);
             // Get the image source URL
             $img_src = wp_get_attachment_image_src($image, 'large');
             ?>
-            <li class="info-cards__card-item" data-aos-delay="<?php echo ($key + 1) . '00'; ?>">
+            <li class="info-cards__card-item" data-aos="fade-up" data-aos-delay="<?php echo ($key + 1) . '00'; ?>">
                 <!-- Display the image -->
                 <img class="info-cards__card-item-image" src="<?php echo esc_url($img_src[0]); ?>" alt="<?php echo esc_attr($title); ?>">
                 <div class="info-cards__card-item-copy-wrapper">
                     <!-- Display the title -->
-                    <h3 class="info-cards__card-item-title" data-aos-delay="<?php echo ($key + 2) . '00'; ?>">
+                    <h3 class="info-cards__card-item-title" data-aos="fade-up" data-aos-delay="<?php echo ($key + 2) . '00'; ?>">
                         <?php echo esc_html($title); ?>
                     </h3>
                     <!-- Display the content if available -->
                     <?php if ($copy) : ?>
-                        <div class="info-cards__card-item-copy" data-aos-delay="<?php echo ($key + 3) . '00'; ?>">
+                        <div class="info-cards__card-item-copy" data-aos="fade-up" data-aos-delay="<?php echo ($key + 3) . '00'; ?>">
                             <?php echo apply_filters('the_content', $copy); ?>
                         </div>
                     <?php endif; ?>

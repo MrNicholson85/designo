@@ -1,6 +1,8 @@
 .contact-form {
 	@apply bg-peach
     lg:rounded-[15px]
+    relative
+    overflow-hidden
     gap-[100px]
     lg:flex
     px-[24px]
@@ -8,7 +10,15 @@
     lg:px-[96px]
     lg:py-[55px]
     items-center
-    mb-[160px];
+    mb-[160px]
+    before:h-[640px]
+    before:w-[640px]
+    before:absolute
+    before:left-0
+    before:bottom-0
+    before:rotate-180
+    before:bg-[url('../theme/assets/img/Oval.png')]
+    bg-no-repeat;
 }
 
 .contact-form h2 {
@@ -34,6 +44,11 @@
     rounded-none
     shadow-none
     text-[#ffffff89];
+}
+
+.gform_wrapper form .gform_body .gform_fields .ginput_container textarea {
+    @apply h-[102px]
+        resize-none;
 }
 
 .gform_wrapper form .gform_footer {

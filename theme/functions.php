@@ -27,7 +27,7 @@ if (!defined('WP_TAILWIND_VERSION')) {
 	 * to create your production build, the value below will be replaced in the
 	 * generated zip file with a timestamp, converted to base 36.
 	 */
-	define('WP_TAILWIND_VERSION', '0.1.0');
+	define('WP_TAILWIND_VERSION', '0.2.0');
 }
 
 if (!defined('WP_TAILWIND_TYPOGRAPHY_CLASSES')) {
@@ -191,6 +191,7 @@ function wp_tailwind_scripts()
 	 * AOS and styles
 	 */
 	wp_enqueue_style('aos-styles', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), WP_TAILWIND_VERSION);
+	wp_enqueue_script('aos-js', 'https://unpkg.com/aos@next/dist/aos.js', array(), WP_TAILWIND_VERSION, true);
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -262,7 +263,7 @@ if (function_exists('acf_register_block_type')) {
 function register_acf_block_types()
 {
 	// Define the directory path where your block files are located
-	$block_directory = __DIR__ . '/blocks';
+	$block_directory = __DIR__ . '/Blocks';
 
 	// Get a list of all PHP files in the directory
 	$block_files = glob("$block_directory/**/");
