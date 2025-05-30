@@ -87,6 +87,12 @@
 	&.is-style-small {
 		@apply h-[252px] flex justify-center items-center;
 
+		&::after {
+			@apply bg-[url('../theme/assets/img/ovals.png')]
+            content-['']
+            scale-y-[-1];
+		}
+
 		.hero__content {
 			@apply h-auto ml-0 grid items-center gap-6;
 

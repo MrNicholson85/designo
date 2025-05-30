@@ -9,6 +9,10 @@
     before:-z-[1]
     before:bottom-0
     overflow-y-hidden;
+
+	&.no-last-call {
+		@apply pt-[72px];
+	}
 }
 
 .last-call {

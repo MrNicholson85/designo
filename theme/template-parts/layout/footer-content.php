@@ -24,31 +24,38 @@ $group_last_call = get_field('last_call_group', 'option');
 $last_call_title = ACF::getField('last_call_title', $group_last_call);
 $last_call_copy = ACF::getField('last_call_copy', $group_last_call);
 $last_call_link = ACF::getField('last_call_link', $group_last_call);
+$footer_classes = "";
+
+if (is_page('contact')) {
+	$footer_classes = "no-last-call";
+}
 ?>
 
-<footer id="colophon" class="footer" data-aos="fade-up" data-aos-delay="500">
-	<div class="dps-wrapper">
-		<div class="last-call" data-aos="fade-up" data-aos-delay="600">
-			<div class="md:w-[499px] w-[85%] mid:mx-0 mx-auto">
-				<h2 class="lc-title" data-aos="fade-up" data-aos-delay="700"><?php echo __($last_call_title); ?></h2>
-				<div class="lc-copy" data-aos="fade-up" data-aos-delay="800">
-					<?php echo apply_filters('the_content', $last_call_copy); ?>
+<footer id="colophon" class="footer <?php echo esc_attr($footer_classes); ?>" data-aos="fade-up" data-aos-delay="500">
+	<?php if (!is_page('contact')) : ?>
+		<div class="dps-wrapper">
+			<div class="last-call" data-aos="fade-up" data-aos-delay="600">
+				<div class="md:w-[499px] w-[85%] mid:mx-0 mx-auto">
+					<h2 class="lc-title" data-aos="fade-up" data-aos-delay="700"><?php echo __($last_call_title); ?></h2>
+					<div class="lc-copy" data-aos="fade-up" data-aos-delay="800">
+						<?php echo apply_filters('the_content', $last_call_copy); ?>
+					</div>
 				</div>
-			</div>
-			<div class="lc-link" data-aos="fade-up" data-aos-delay="900">
-				<?php
-				printf(
-					'
+				<div class="lc-link" data-aos="fade-up" data-aos-delay="900">
+					<?php
+					printf(
+						'
 				<a href="%2$s" target="%3$s" class="dps-light-btn">%1$s</a>
 				',
-					$last_call_link['title'],
-					$last_call_link['url'],
-					$last_call_link['target'],
-				);
-				?>
+						$last_call_link['title'],
+						$last_call_link['url'],
+						$last_call_link['target'],
+					);
+					?>
+				</div>
 			</div>
 		</div>
-	</div>
+	<?php endif; ?>
 	<div class="footer-columns">
 		<div class="dps-wrapper">
 			<div class="fc-top">

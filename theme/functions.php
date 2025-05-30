@@ -269,8 +269,6 @@ function register_acf_block_types()
 	$block_files = glob("$block_directory/**/");
 
 	foreach ($block_files as $block_file) {
-
-		//var_dump($block_files);
 		register_block_type($block_file);
 	}
 }
