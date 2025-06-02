@@ -9,5 +9,9 @@
     "acf": {
         "mode": "preview",
         "renderTemplate": "services.php"
-    }
+    },
+    "styles": [
+        { "name": "standard", "label": "Standard Styles", "isDefault": true },
+        { "name": "masonary", "label": "Masonary Styles" }
+      ]
 }

@@ -3,6 +3,30 @@
     "title": "Project Item Block",
     "fields": [
         {
+            "key": "field_6839e7b019d18",
+            "label": "Projects Display Toggle",
+            "name": "projects_display_toggle",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "all": "All Projects",
+                "selected": "Selected Projects"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "allow_in_bindings": 1,
+            "layout": "vertical"
+        },
+        {
             "key": "field_6838c6420abd3",
             "label": "Post Per Page",
             "name": "post_per_page",
@@ -10,7 +34,15 @@
             "type": "number",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6839e7b019d18",
+                        "operator": "==",
+                        "value": "selected"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -27,13 +59,21 @@
         },
         {
             "key": "field_6838d4680abd4",
-            "label": "Project Item Type",
-            "name": "project_item_type",
+            "label": "Project Items",
+            "name": "project_items",
             "aria-label": "",
-            "type": "relationship",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6839e7b019d18",
+                        "operator": "==",
+                        "value": "selected"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -50,16 +90,38 @@
                 "project-type:graphic-design",
                 "project-type:web-design"
             ],
-            "filters": [
-                "post_type",
-                "taxonomy"
-            ],
-            "return_format": "object",
-            "min": "",
-            "max": "",
+            "return_format": "id",
+            "multiple": 1,
+            "allow_null": 0,
             "allow_in_bindings": 0,
-            "elements": "",
             "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_6839eb8219d19",
+            "label": "Project Category Type",
+            "name": "project_category_type",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "project-type",
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "object",
+            "field_type": "select",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "multiple": 0,
             "bidirectional_target": []
         }
     ],
@@ -81,5 +143,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1748573884
+    "modified": 1748646254
 }
