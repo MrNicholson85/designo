@@ -66,12 +66,11 @@
 	&__image {
 		@apply w-[248px]
         lg:w-[279px]
-        translate-y-[174px]
-        md:translate-y-[53px]
+        translate-z-[174px]
         mx-auto
         lg:mx-0
-        md:translate-y-[169px]
-        lg:translate-y-[110px];
+        md:translate-z-[169px]
+        lg:translate-z-[110px];
 
 		img {
 			@apply m-0
