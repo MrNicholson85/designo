@@ -64,13 +64,22 @@
 	}
 
 	&__image {
+		transform: translateZ(174px);
+
+		@media (min-width: 768px) {
+			/* CSS rule to apply only on screens with a width of 1440px or more */
+			transform: translateZ(169px);
+		}
+
+		@media (min-width: 1024px) {
+			/* CSS rule to apply only on screens with a width of 1024px or more */
+			transform: translateZ(110px);
+		}
+
 		@apply w-[248px]
         lg:w-[279px]
-        translate-z-[174px]
         mx-auto
-        lg:mx-0
-        md:translate-z-[169px]
-        lg:translate-z-[110px];
+        lg:mx-0;
 
 		img {
 			@apply m-0
